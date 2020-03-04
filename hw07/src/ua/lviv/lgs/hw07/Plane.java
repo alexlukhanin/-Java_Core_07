@@ -1,6 +1,6 @@
 package ua.lviv.lgs.hw07;
 
-public abstract class Plane extends PlaneControl {
+public abstract class Plane {
 
 	private double length;
 	private double width;
