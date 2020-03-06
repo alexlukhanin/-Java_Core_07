@@ -3,8 +3,6 @@ package ua.lviv.lgs.hw07;
 public class PlaneControl {
 	
 	
-	
-	
 	public PlaneControl() {
 		super();
 		

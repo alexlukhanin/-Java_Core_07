@@ -56,5 +56,23 @@ public class SU27 extends Plane implements SpecialcCapabilities {
 		System.out.println("The plane will drop " + ((int) (Math.random() * 10) + 1) + " nuclear bombs! Ba-Da-Bum!!!"); // [1:10] 
 																														
 	}
+	
+	public void moveSu27Up (PlaneControl planeControl) {
+		planeControl.moveUp();
+	}
+	
+	public void moveSu27Down (PlaneControl planeControl) {
+		planeControl.moveDown();
+	}
+	
+	public void moveSu27Left (PlaneControl planeControl) {
+		planeControl.moveLeft();
+	}
+	
+	public void moveSu27Right (PlaneControl planeControl) {
+		planeControl.moveRight();
+	}
+	
+	
 
 }
