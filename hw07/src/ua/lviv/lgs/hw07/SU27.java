@@ -4,13 +4,14 @@ public class SU27 extends Plane implements SpecialcCapabilities {
 
 	private double maxSpeed;
 	private String color;
-	private PlaneControl planeControl;
+	private PlaneControl planeControl = new PlaneControl();
+	
+	
 
-	public SU27(double length, double width, double weight, double maxSpeed, String color, PlaneControl planeControl) {
+	public SU27(double length, double width, double weight, double maxSpeed, String color) {
 		super(length, width, weight);
 		this.maxSpeed = maxSpeed;
 		this.color = color;
-		this.planeControl = planeControl;
 		
 	}
 
@@ -57,19 +58,19 @@ public class SU27 extends Plane implements SpecialcCapabilities {
 																														
 	}
 	
-	public void moveSu27Up (PlaneControl planeControl) {
+	public void moveSu27Up () {
 		planeControl.moveUp();
 	}
 	
-	public void moveSu27Down (PlaneControl planeControl) {
+	public void moveSu27Down () {
 		planeControl.moveDown();
 	}
 	
-	public void moveSu27Left (PlaneControl planeControl) {
+	public void moveSu27Left () {
 		planeControl.moveLeft();
 	}
 	
-	public void moveSu27Right (PlaneControl planeControl) {
+	public void moveSu27Right () {
 		planeControl.moveRight();
 	}
 	
